@@ -1,0 +1,497 @@
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	position: relative;
+}
+
+/*navbar*/
+.navbar-ny {
+    font-size: 12px;
+    height: 54px;
+    background-color: #262626;
+    z-index: 100;
+    line-height: 54px;
+    margin-bottom: 1px;
+}
+
+.navbar-logo {
+    float: left;
+    padding: 0 20px;
+}
+
+.navbar-ny .navbar-logo p{
+	font-size: 20px;
+    color: #fff;
+}
+/*end navbar*/
+
+/*header*/
+.header {
+	padding-bottom: 9px;
+	margin: 0;
+	border-bottom: 1px solid #eee;
+}
+
+.header .bg-header {
+	position: relative;
+	height: 665px;
+	width: 100%;
+	background: #333 url(../img/header.jpg) center center no-repeat fixed;
+	overflow: hidden;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	z-index: 1;
+}
+
+.header .pattern {
+	background: url(../img/pixel-h.png) repeat center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	z-index: 0;
+}
+
+.header .content {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	letter-spacing: 1.4px;
+	text-transform: uppercase;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	-moz-transform: translate3d(-50%,-50%,0);
+	-o-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+.center {
+	text-align: center;
+}
+
+.header .content h1 {
+	color: #fff;
+	font-size: 6rem;
+	margin: 0;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	display: inline-block;
+	padding: 0.5rem 2rem;
+	animation: fadeInDownBig 1s;
+}
+
+h1, h2, h3, h4, h5, h6, a, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+}
+
+.header .content p {
+	font-size: 3rem;
+	margin: 0.5rem auto;
+	color: #fff;
+	animation: fadeInDownBig 1s;
+}
+
+p {
+	font-weight: 300;
+	letter-spacing: 1.2px;
+}
+
+.header .content a {
+	display: inline-block;
+	width: 10rem;
+	border: 1px solid #fff;
+	padding: 8px;
+	margin: 10px;
+	animation: fadeInDownBig 1s;
+}
+
+ton, button:focus, a, a:hover, a:focus, input, input:active, input:focus, textarea, textarea:active, textarea:focus {
+	outline: none;
+}
+
+a, a:hover, a:focus {
+	color: #fff;
+	text-decoration: none;
+}
+
+a {
+	background-color: transparent;
+}
+
+.header .content a:hover {
+	background: #fff;
+	color: #000;
+	transition: all 0.3s ease;
+}
+
+button, button:focus, a, a:hover, a:focus, input, input:active, input:focus, textarea, textarea:active, textarea:focus {
+	outline: none;
+}
+
+a, a:hover, a:focus {
+	color: #fff;
+	text-decoration: none;
+}
+a:focus {
+	outline: thin dotted;
+	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: -2px;
+}
+/*end header*/
+
+/*about me*/
+@media (max-width: 767px)
+.about-me {
+	text-align: center;
+}
+
+.about-me, .fun-facts, .services, .technical-skills, .experiences, .portfolio {
+	padding: 80px 0 40px;
+}
+
+.about-me .about-pic, .about-me .introduction {
+	margin-bottom: 20px;
+}
+
+.about-me .about-pic img {
+	border-radius: 50%;
+	border: 2px solid #dedede;
+	background: #fff;
+	padding: 7px;
+	box-shadow: 0 7px 10px #999;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.about-me .about-pic, .about-me .introduction {
+	margin-bottom: 20px;
+}
+
+.h2 {
+	font-size: 2.3rem;
+	text-transform: uppercase;
+	margin: 0 auto;
+	letter-spacing: 1.2px;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	margin: 0px;
+	color: #333;
+}
+
+.name-line {
+	height: 3px;
+	width: 65px;
+	background: #333;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: inline-block;
+	position: relative;
+}
+
+.about-me .introduction p.introduce {
+	text-transform: uppercase;
+}
+
+.about-me .introduction p {
+	color: #555;
+	font-weight: 300;
+	margin: 0 auto;
+}
+
+p {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color: #555;
+	font-weight: 300;
+	letter-spacing: 1.2px;
+}
+
+.about-me .introduction p.intro {
+	margin-top: 20px;
+}
+
+.about-me .profile {
+	margin-bottom: 30px;
+}
+
+.about-me h3 {
+	font-size: 1.3rem;
+	margin-top: 0;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	color: #333;
+	font-weight: bolder;
+}
+
+.about-me .personal-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.about-me .personal-wrapper strong {
+	display: block;
+	color: #333;
+	margin-bottom: 5px;
+}
+
+.about-me .personal-wrapper span {
+	margin: 5px 0 10px;
+	text-transform: uppercase;
+	color: #555;
+}
+
+.about-me .tentang {
+	margin-bottom: 40px;
+}
+.about-me .tentang.action-down{
+	visibility: visible; 
+	animation-duration: 0.5s; 
+	animation-name: fadeInUp;
+}
+
+.about-me .tentang .accordion {
+	text-align: left;
+	line-height: 1.8;
+}
+
+.about-me .tentang .accordion .acc-item .acc-title.active {
+	background: #181818;
+	color: #fff;
+	border-color: #181818;
+}
+
+.about-me .tentang .accordion .acc-item .acc-title {
+	padding: 10px;
+	margin: 0;
+	cursor: pointer;
+	position: relative;
+	border: 1px solid #ccc;
+	color: #333;
+	text-transform: uppercase;
+	letter-spacing: 1.8px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.about-me .tentang .accordion .acc-item .acc-title.active i {
+	-webkit-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	transform: rotate(0deg);
+	color: #fff;
+}
+
+.about-me .tentang .accordion .acc-item .acc-title i {
+	position: absolute;
+	right: 20px;
+	color: #181818;
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.about-me .tentang .accordion .acc-item .acc-content {
+	padding: 10px;
+	margin: 0;
+	letter-spacing: 1.3px;
+	color: #555;
+	background: #f4f4f4;
+	display: none;
+}
+/*end about me*/
+
+/*fun*/
+.fun {
+	background: #333 url(../img/bersepeda.png) no-repeat 50% 80% fixed;
+	background-size: cover;
+	position: relative;
+}
+
+.pattern {
+	background: url(../img/pixel.png) repeat center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	z-index: 0;
+}
+
+.fun .jenis {
+	color: #d2d2d2;
+	text-transform: capitalize;
+	letter-spacing: 1.2px;
+	margin-bottom: 40px;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.fun .jenis p {
+	font-size: 4.5rem;
+	color: #d2d2d2;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.fun .jenis i.fa.fa-5 {
+	font-size: 12em;
+	padding-top: 50px;
+}
+
+.fun .jenis i.fa.fa-4 {
+	font-size: 10em;
+	padding-top: 80px;
+}
+/*end fun*/
+
+/*services*/
+.about-me, .fun, .services, .technical-skills, .experiences, .portfolio {
+    padding: 80px 0 40px;
+}
+
+.services .service {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.services .service i.fa.fa-3 {
+	font-size: 6em;
+	padding-top: 20px;
+}
+
+.services .service:hover i {
+    background: #222;
+    color: #fff;
+    border: 1px solid #222;
+}
+
+.services .service i {
+    font-size: 3.5rem;
+    border-radius: 50%;
+    display: inline-block;
+    height: 135px;
+    width: 135px;
+    line-height: 95px;
+    color: #222;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+/*end service*/
+
+/*technical skills*/
+.technical-skills {
+    background: #333 url(../img/skills.png) no-repeat 50% 80% fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.technical-skills h2 {
+    color: #eaeaea;
+    position: relative;
+}
+
+.technical-skills .skill {
+    margin-bottom: 40px;
+}
+
+.technical-skills .skill .chart {
+    position: relative;
+    display: inline-block;
+    color: #eee;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.technical-skills .skill .chart > span {
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 2.1rem;
+}
+
+audio, canvas, progress, video {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.technical-skills .progress_group {
+    text-align: left;
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.technical-skills .skill{
+    padding-top: 60px;
+}
+
+.technical-skills .border_label {
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.technical-skills .border_label, .technical-skills .bar_label_min, .technical-skills .bar_label_max, .technical-skills .b_tooltip span {
+    color: #fff;
+    font-size: 15px;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #555;
+    font-weight: 300;
+    letter-spacing: 1.2px;
+}
+/*end technical skills*/
+
+/*footer*/
+.footer {
+    background: #181818;
+}
+
+.footer .copyright {
+    border-top: 1px solid #333;
+    padding: 15px 0;
+}
+
+.footer .copyright p {
+	font-size: 1rem;
+	color: #d2d2d2;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+/*end footer*/
