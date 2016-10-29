@@ -7,6 +7,7 @@
 	<title>Profil Page | Nyagenta</title>
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/agency.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/animate.css">
@@ -14,12 +15,35 @@
 </head>
 <body>
 	<!-- navbar -->
-	<div class="navbar-ny navbar-fixed-top">
+<!-- 	<div class="navbar-ny navbar-fixed-top">
 		<div class="navbar-logo">
 			<p>Web Profil</p>
 		</div>
-	</div>
-	
+	</div> -->
+	<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top affix-top" role="navigation">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">IMAM NAWAWI</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a class="page-scroll" href="#profil">Profil</a></li>
+					<li><a class="page-scroll" href="#hobbi">Hobbi</a></li>
+					<li><a class="page-scroll" href="#tentang">Tentang</a></li>
+					<li><a class="page-scroll" href="#skill">Skill</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</nav>	
 	<!-- end navbar -->
 
 	<!-- header -->
@@ -28,10 +52,16 @@
 			<div class="pattern">
 				<div class="content center">
 					<div class="container">
-						<p>Hallo, saya</p>
-						<h1>IMAM NAWAWI</h1>
-						<p>BACK-END - DEVELOPER</p>
-						<a href="#">Tentang</a>
+						<div class="row">
+							<div class="about-pic center col-xs-12 col-sm-4">
+								<img src="img/imam.png" alt="my profil">
+							</div>
+							<div class="center col-xs-12 col-sm-8">
+								<h1>IMAM NAWAWI</h1>
+								<p>BACK-END - DEVELOPER</p>
+								<a href="#profil">Profil</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -40,17 +70,15 @@
 	<!-- end header -->
 
 	<!-- about me -->
-	<div class="about-me">
+	<div id="profil" class="about-me">
 		<div class="container">
 			<div class="row">
-				<div class="about-pic center col-xs-12 col-sm-4">
-					<img src="img/imam.png" alt="my profil">
-				</div>
-				<div class="introduction col-xs-12 col-sm-8">
-					<h2 class="h2">imam nawawi</h2>
+				
+				<div class="introduction col-xs-12 col-sm-12">
+					<h2 class="h2">Profile</h2>
 					<div class="name-line"></div>
-					<p class="introduce">web designer / developer</p>
-					<p class="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores nesciunt, veritatis dolorem ullam quis et voluptatibus aspernatur, distinctio pariatur numquam facere saepe ducimus consectetur in ea, autem. Quae, molestias, autem.</p>
+					<p class="introduce"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> web designer / developer</p>
+					<p class="introduce"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Back-End / Beginer</p>
 				</div>
 			</div>
 			<div class="row">
@@ -72,7 +100,8 @@
 						</span>
 					</div>
 				</div>
-				<div class="tentang col-xs-12 col-sm-8">
+
+				<div class="tentang anim col-xs-12 col-sm-8" data-wow-duration="0.5s" data-wow-offset="200" style="visibility: visible; animation-duration: 0.5s; animation-name: fadeInUp;">
 					<div class="accordion">
 						<div class="acc-item">					
 							<div class="acc-title active">
@@ -80,7 +109,7 @@
 								Siapa saya?
 							</div>
 							<div class="acc-content"  style="display: block;">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sequi, dolore iste rem eum officiis dicta quam quae suscipit delectus possimus nobis, accusantium quibusdam enim aperiam eius expedita repudiandae libero.
+								Mahasiswa Politeknik Negeri Malang, jurusan Teknik Informatika. Deploy sebuah projek menjadi sebuah produk yang telah siap digunakan adalah target utama saya. 
 							</div>
 						</div>
 						<div class="acc-item">					
@@ -89,7 +118,7 @@
 								Profesi Saat ini?
 							</div>
 							<div class="acc-content"  style="display: block;">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sequi, dolore iste rem eum officiis dicta quam quae suscipit delectus possimus nobis, accusantium quibusdam enim aperiam eius expedita repudiandae libero.
+								Dilain kesibukan saya  sebagai mahasiswa, saat ini saya bersama teman-teman / team saya lagi dalam proses membangun StartUp yang bernama Nyagenta Softworks.
 							</div>
 						</div>
 					</div>
@@ -100,10 +129,14 @@
 	<!-- end about me -->
 
 	<!-- fun -->
-	<div class="fun center">
+	<div id="hobbi" class="fun center">
 		<div class="pattern"></div>
 		<div class="container">
 			<div class="row">
+				<div class="center">
+					<h2 class="h2">Hobbi</h2>
+					<div class="name-line center"></div>
+				</div>
 				<!-- jenis No. 1 -->
 				<div class="col-md-3 col-sm-6">
 					<div class="jenis">
@@ -142,112 +175,165 @@
 	<!-- end fun -->
 
 	<!-- service -->
-	<div class="services center">
+	<div id="tentang" class="services center">
 		<div class="container">
 			<div class="title">
-				<h2 class="h2">Yang Saya Lakukan Sekarang</h2>
+				<h2 class="h2">Tentang</h2>
 				<div class="name-line"></div>
 			</div>
 			<div class="row">
-				<!-- Service No. 1 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="service">
-						<i class="fa fa-university fa-3"></i>
-						<h3>Kuliah</h3>
-						<p>
-							Saya sebagai mahasiswa Politeknik Negeri malang, dengan mengambil jurusan Teknik Informatika.
-						</p>
-					</div>
+				<ul class="timeline col-xs-12">
+					<li>
+						<div class="timeline-image">
+							<img class="img-circle img-responsive" src="img/smk.png" alt="">
+						</div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4>2012-2015</h4>
+								<h4 class="subheading">Belajar di SMK Negeri Pasirian</h4>
+							</div>
+							<div class="timeline-body">
+								<p class="text-muted">Di SMK Negeri Pasirian saya mengambil jurusan <b>Rekayasa Perangkat Lunak</b>, disinilah saya memulai kesukaan saya pada bidang ilmu komputer. </p>
+							</div>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-image">
+							<img class="img-circle img-responsive" src="img/polinema.png" alt="">
+						</div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4>Agustus 2015</h4>
+								<h4 class="subheading">Masuk di Politeknik Negeri Malang</h4>
+							</div>
+							<div class="timeline-body">
+								<p class="text-muted">Di Politeknik Negeri Malang ini saya melanjutkan dari jurusan saya di SMK, di sini saya mengambil jurusan <b>Teknik Informatika</b>. Karena saya ingin melanjutkan hobbi saya dari SMK.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="timeline-image">
+							<h4>Nyagenta
+								<br>Softworks</h4>
+							</div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h4>Agustus 2016</h4>
+									<h4 class="subheading">Nyagenta Softworks</h4>
+								</div>
+								<div class="timeline-body">
+									<p class="text-muted">Nyagenta Softworks adalah StartUp yang saya bangun bersama rekan-rekan saya, yang saat ini dalam proses perkembangan.</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-inverted">
+							<div class="timeline-image">
+								<h4>Hingga
+									<br>Sekarang</h4>
+								</div>
+							</li>
+						</ul>
+
+						<!-- Service No. 1 -->
+					<!-- <div class="col-md-4 col-sm-6">
+						<div class="service">
+							<i class="fa fa-university fa-3"></i>
+							<h3>Kuliah</h3>
+							<p>
+								Saya sebagai mahasiswa Politeknik Negeri malang, dengan mengambil jurusan Teknik Informatika.
+							</p>
+						</div>
+					</div> -->
+					<!-- Service No. 2 -->
+					<!-- <div class="col-md-4 col-sm-6">
+						<div class="service">
+							<i class="fa fa-file-code-o fa-3"></i>
+							<h3>Learning</h3>
+							<p>Belajar tidak hanya saya dapatkan dari kampus, saya juga mencari pengalaman di luar kampus untuk mendapatkan informasi dan ilmu yang lebih maksimal. </p>
+						</div>
+					</div> -->
+
+					<!-- Service No. 3 -->
+					<!-- <div class="col-md-4 col-sm-6">
+						<div class="service">
+							<i class="fa fa-code fa-3"></i>
+							<h3>Development</h3>
+							<p>Development adalah salah target utama saya untuk menghasilkan sebuah produk yang berkualitas.</p>
+						</div>
+					</div> -->
 				</div>
-				<!-- Service No. 2 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="service">
-						<i class="fa fa-file-code-o fa-3"></i>
-						<h3>Learning</h3>
-						<p>Belajar tidak hanya saya dapatkan dari kampus, saya juga mencari pengalaman di luar kampus untuk mendapatkan informasi dan ilmu yang lebih maksimal. </p>
-					</div>
+			</div>
+		</div>
+		<!-- end service -->
+
+		<!-- tehnical-skills -->
+		<div id="skill" class="technical-skills center">
+			<div class="pattern"></div>
+			<div class="container">
+				<div class="title">
+					<h2 class="h2">Skill</h2>
+					<div class="name-line"></div>
 				</div>
 
-				<!-- Service No. 3 -->
-				<div class="col-md-4 col-sm-6">
-					<div class="service">
-						<i class="fa fa-code fa-3"></i>
-						<h3>Development</h3>
-						<p>Development adalah salah target utama saya untuk menghasilkan sebuah produk yang berkualitas.</p>
+				<!-- Skills -->
+				<div class="skill col-sm-6 col-md-6">
+					<!-- skill no 1 -->
+					<div class="progress_group">
+						<p class="border_label"><img src="img/htmlcss.png" alt=""></p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+								80%
+							</div>
+						</div>
+					</div>
+					<!-- skill no 2 -->
+					<div class="progress_group">
+						<p class="border_label"><img src="img/php.png" alt=""></p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+								70%
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="skill col-sm-6 col-md-6">
+					<!-- skill no 3 -->
+					<div class="progress_group">
+						<p class="border_label"><img src="img/java.png" alt=""></p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 73%;">
+								73%
+							</div>
+						</div>
+					</div>
+					<!-- skill no 4 -->
+					<div class="progress_group">
+						<p class="border_label"><img src="img/csharp.png" alt=""></p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+								60%
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- end service -->
+		<!-- end tehnical skill -->
 
-	<!-- tehnical-skills -->
-	<div class="technical-skills center">
-		<div class="pattern"></div>
-		<div class="container">
-			<div class="title">
-				<h2 class="h2">Skill</h2>
-				<div class="name-line"></div>
-			</div>
-
-			<!-- Skills -->
-			<div class="skill col-sm-6 col-md-6">
-				<!-- skill no 1 -->
-				<div class="progress_group">
-					<p class="border_label"><img src="img/htmlcss.png" alt=""></p>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-							80%
-						</div>
-					</div>
-				</div>
-				<!-- skill no 2 -->
-				<div class="progress_group">
-					<p class="border_label"><img src="img/php.png" alt=""></p>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-							70%
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="skill col-sm-6 col-md-6">
-				<!-- skill no 3 -->
-				<div class="progress_group">
-					<p class="border_label"><img src="img/java.png" alt=""></p>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 73%;">
-							73%
-						</div>
-					</div>
-				</div>
-				<!-- skill no 4 -->
-				<div class="progress_group">
-					<p class="border_label"><img src="img/csharp.png" alt=""></p>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-							60%
-						</div>
+		<!-- footer -->
+		<div class="footer center">
+			<div class="container">
+				<div class="row">
+					<div class="copyright col-xs-12">
+						<p>© IMAM 2016 All Rights Reserved.</p>
+						<p> Designed by IMAM NAWAWI</p>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- end tehnical skill -->
-
-	<!-- footer -->
-	<div class="footer center">
-		<div class="container">
-			<div class="row">
-				<div class="copyright col-xs-12">
-					<p>© IMAM 2016 All Rights Reserved.</p>
-					<p> Designed by IMAM NAWAWI</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- end footer -->
-	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-</body>
-</html>
+		<!-- end footer -->
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/agency.min.js"></script>
+	</body>
+	</html>
